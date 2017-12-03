@@ -56,6 +56,7 @@ export default class SpaceShip extends Component {
     }
 
     _onPressButton(){//when the button is clicked it allows _renderShoot to create the image
+        console.log("Shooting");
         if(this.state.cooldown == false){//prevents people from spamming shoot so they can only shoot once every 5 seconds
             this.state.cooldown = true;
             this.state.showShoot = true;
